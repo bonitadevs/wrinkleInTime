@@ -4,6 +4,7 @@
   padding: 2px;
   transition: 0.3s;
   overflow: hidden;
+  max-width: 79.5%;
 }
 .gallery:hover .gallery__image {
   filter: grayscale(1);
@@ -30,9 +31,10 @@
   display: block;
   width: 100%;
   transition: 0.3s;
+
 }
 .gallery__image:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .gallery__caption {
   position: absolute;

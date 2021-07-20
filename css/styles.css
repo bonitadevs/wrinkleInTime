@@ -5,7 +5,10 @@ body {
     font-family: azo-sans-web,sans-serif;
     
     }
-    
+.container {
+     max-width: unset;
+}
+
 .navbar a{
 font-family: azo-sans-web,sans-serif;
 font-weight: 400;
@@ -16,9 +19,18 @@ font-style: normal;
     border-radius: 33px;
 }
 
+.tab {
+    position: fixed;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
 
-@media screen and (min-width: 768px) {
-    body { background: linear-gradient(to right, #050517 20%, #D9DBF1 0%); }
+@media screen and (min-width: 992px) {
+    body { background: linear-gradient(to right, #050517 20%, #8797AF 0%); }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -30,3 +42,36 @@ font-style: normal;
     text-align: center;
 }
 
+.intro {
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    color: #A9B5C6;
+   
+}
+
+h3 {
+    color: white;
+    font-family: azo-sans-web,sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.25rem;
+}
+
+h5 {
+    margin-top: 20%;
+    color: white;
+}
+
+.btn-warning, .btn-warning:hover, .btn-warning:active, .btn-warning:visited {
+    background-color: #FADF63 !important;
+}
+
+.social {
+    font-size: 0.8rem;
+    color: white;
+}
