@@ -1,8 +1,9 @@
 .gallery {
-  margin-left: 30%;
+  margin-left: 20.25%;
   display: flex;
   padding: 2px;
   transition: 0.3s;
+  overflow: hidden;
 }
 .gallery:hover .gallery__image {
   filter: grayscale(1);
@@ -10,7 +11,7 @@
 .gallery__column {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  max-width: 25%;
 }
 .gallery__link {
   margin: 2px;
@@ -43,7 +44,7 @@
   font-size: 16px;
   color: white;
   opacity: 0;
-  background: linear-gradient(0deg,  #050517 0%, #050517 100%);
+  background: linear-gradient(0deg,  #05051733 0%, #050517 100%);
   transition: 0.3s;
 }
 

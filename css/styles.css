@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, #050517 30%, #D9DBF1 0%);
+    background-color: #050517;
     height:100vh;
     
     }
@@ -12,6 +12,11 @@ font-style: normal;
 
 .form-control {
     border-radius: 33px;
+}
+
+
+@media screen and (min-width: 768px) {
+    body { background: linear-gradient(to right, #050517 20%, #D9DBF1 0%); }
 }
 
 
