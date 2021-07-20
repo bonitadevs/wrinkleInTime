@@ -1,6 +1,7 @@
 body {
     background-color: #050517;
     height:100vh;
+    overflow-x: hidden;
     
     }
     
@@ -19,4 +20,12 @@ font-style: normal;
     body { background: linear-gradient(to right, #050517 20%, #D9DBF1 0%); }
 }
 
+@media screen and (min-width: 992px) (max-width: 1200px) {
+    .gallery__column {max-width: 20%; }
+}
+
+.logo {
+    display: flex;
+    text-align: center;
+}
 
