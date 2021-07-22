@@ -5,6 +5,7 @@ body{
 .design {
     display: flex;
     flex-direction: row-reverse;
+    z-index: -2;
 }
 .pinkdots {
     margin-top: 10%;
@@ -12,3 +13,15 @@ body{
     width: 25%;
     z-index: -1;
 }
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.woman {
+    width: 100%;
+    height: 100%;
+}
+
