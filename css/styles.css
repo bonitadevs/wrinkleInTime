@@ -29,14 +29,6 @@ font-style: normal;
     align-items: center;
 }
 
-@media screen and (min-width: 992px) {
-    body { background: linear-gradient(to right, #050517 20%, #8797AF 0%); }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    .gallery__column {max-width: 20%; }
-}
-
 .logo {
     display: flex;
     text-align: center;
@@ -80,4 +72,17 @@ h5 {
 .social {
     font-size: 0.8rem;
     color: white;
+}
+
+.social_media {
+    font-size: 1rem;
+    color:#FADF63;
+}
+
+@media screen and (min-width: 992px) {
+    body { background: linear-gradient(to right, #050517 20%, #8797AF 0%); }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .gallery__column {max-width: 20%; }
 }

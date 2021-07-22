@@ -1,9 +1,8 @@
 .gallery {
-  margin-left: 20.25%;
   display: flex;
   padding: 2px;
+  margin-left: 20.25%;
   transition: 0.3s;
-  overflow: hidden;
   max-width: 79.5%;
 }
 .gallery:hover .gallery__image {
@@ -12,7 +11,7 @@
 .gallery__column {
   display: flex;
   flex-direction: column;
-  max-width: 25%;
+  width: 25%;
 }
 .gallery__link {
   margin: 2px;
@@ -31,10 +30,9 @@
   display: block;
   width: 100%;
   transition: 0.3s;
-
 }
 .gallery__image:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .gallery__caption {
   position: absolute;
@@ -42,11 +40,11 @@
   left: 0;
   padding: 25px 15px 15px;
   width: 100%;
-  font-family: "adore-you", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   color: white;
   opacity: 0;
-  background: linear-gradient(0deg,  #05051733 0%, #050517 100%);
+  background: linear-gradient(0deg, #050517 0%, rgba(255, 255, 255, 0) 100%);
   transition: 0.3s;
 }
 

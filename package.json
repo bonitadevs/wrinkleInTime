@@ -12,6 +12,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^5.0.2",
+    "rfs": "^9.0.4",
     "scss": "^0.2.4"
   },
   "devDependencies": {
