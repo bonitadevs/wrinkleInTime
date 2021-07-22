@@ -67,8 +67,14 @@ h5 {
     color: white;
 }
 
-.btn-warning, .btn-warning:hover, .btn-warning:active, .btn-warning:visited {
+.btn-warning, .btn-warning:active, .btn-warning:visited {
     background-color: #FADF63 !important;
+}
+
+.btn-warning:hover {
+    background-color: white !important;
+    border: solid #FADF63;
+    color: #050517;
 }
 
 .social {
