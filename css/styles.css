@@ -2,8 +2,7 @@ body {
     background-color: #050517;
     height:100vh;
     overflow-x: hidden;
-    font-family: azo-sans-web,sans-serif;
-    
+    font-family: azo-sans-web,sans-serif;  
     }
 .container {
      max-width: unset;

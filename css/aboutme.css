@@ -1,5 +1,6 @@
 body{
     background-color: #050517;
+    font-family: azo-sans-web,sans-serif;
 }
 
 h3 {
@@ -14,9 +15,9 @@ h3 {
     z-index: -2;
 }
 .pinkdots {
-    margin-top: 10%;
-    height: 25%;
-    width: 25%;
+    position: absolute;
+    margin-top: 6%;
+    height: 12vh;
     z-index: -1;
 }
 
@@ -29,5 +30,16 @@ h3 {
 .woman {
     width: 100%;
     height: 100%;
+    border-radius: 30px;
+    border: solid 1px #F2E86D;
 }
 
+.bio {
+    color: white;
+}
+
+.aboutmeimages {
+    margin-top: 6rem;
+    width: 70%;
+    border: solid 1px #F2E86D;
+}
