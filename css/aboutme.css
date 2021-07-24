@@ -43,3 +43,9 @@ h3 {
     width: 70%;
     border: solid 1px #F2E86D;
 }
+
+@media screen and (max-width: 776px) {
+   .aboutme {flex-direction: column; margin-top: 1.5rem;}
+   .bio {font-size: 00.75rem; text-align: center;}
+   .woman {width: 75%; margin-left: auto; margin-right: auto;}
+}
