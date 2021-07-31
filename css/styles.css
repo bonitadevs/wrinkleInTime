@@ -23,7 +23,7 @@ font-style: normal;
     flex-direction: column;
     width: 20%;
     height: 100vh;
-    z-index: 1;
+    z-index: 1030;
     justify-content: center;
     align-items: center;
 }
@@ -76,6 +76,15 @@ h5 {
 .social_media {
     font-size: 1rem;
     color:#FADF63;
+}
+
+#subscribeModal {
+z-index: 1020;
+}
+
+.modal-title {
+    color: #050517;
+    font-weight: 400;
 }
 
 @media screen and (min-width: 992px) {

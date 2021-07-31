@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/vtg2fgn.css">
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="output.css">
    
@@ -17,6 +17,7 @@
     <title>Home</title>
   </head>
   <body>
+<!--navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top .navbar-expand">
         <a class="navbar-brand px-md-4" href="#"><img src="images/logo_leaf.png" class="leafpic d-inline-block align-top" width="30" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,20 +64,60 @@
     </nav>
     <div class="tab d-lg-flex d-none">
         <img src="images/wit_logo_white.png" width="200" height="150">
+<!--subscribe modal-->
+        <button type="button" class="btn btn-warning" id="subscribe-btn">Subscribe Now</button>
 
-        <a href=subscribe.html" type="button" class="btn btn-warning">Subscribe Now</a>
-          
+        <div id="subscribeModal" class="modal fade" role="dialog" data-backdrop="false">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h3 class="modal-title">Subscribe Now!</h3>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="container-fluid">
+                          <form>
+                              <div class="form-row">
+                                  <div class="form-group col-12">
+                                      <label class="sr-only" for="loginEmail">Email address</label>
+                                      <input type="email" class="form-control form-control-sm" id="enterEmail" placeholder="email">
+                                  </div>
+                                  <div class="form-group col-12">
+                                      <label class="sr-only" for="firstName">First Name</label>
+                                      <input type="name" class="form-control form-control-sm" id="enterName" placeholder="first name">
+                                  </div>
+                                  <div class="form-group col-12">
+                                    <label class="sr-only" for="firstName">Last Name</label>
+                                    <input type="name" class="form-control form-control-sm" id="enterName" placeholder="last name">
+                                </div>
+                                  <div class="col">
+                                      <div class="form-check">
+                                          <input class="form-check-input" type="checkbox">
+                                          <label class="form-check-label pb-3">I would like to receive email notifications from A Wrinkle In Thyme.</label>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="form-row">
+                                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                  <button type="submit" class="btn btn-primary btn-sm ml-1">Submit</button>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+<!--Introduction-->         
         <p class="intro px-md-3 py-md-5">Culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptartem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi ropeior architecto beatae vitae dicta sunt explicabo. 
         </p>
+<!--Social Media-->  
         <p class="social">Follow Me On Social Media:<p>
           <i class="social_media fab fa-facebook-square px-1"></i>
           <i class="social_media fab fa-instagram-square px-1"></i>
           <i class="social_media fab fa-pinterest px-1"></i>
           <i class="social_media fab fa-twitter-square px-1"></i>
       </div>
-            
-    
-   
+<!--Picture Gallery-->     
     <div class="gallery container d-none d-lg-flex">
         <div class="row no-gutters">
           <div class="gallery__column col-lg-3">
@@ -172,6 +213,7 @@
           </div>
         </div>
       </div>
+<!--Small Screens-->  
       <div class="logo container d-block d-lg-none align-middle">
         <div class="row no-gutters mt-5">
           <div class="col">
@@ -198,12 +240,13 @@
           </div>
         </div>
 
-    <!-- Optional JavaScript -->
+    <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="less.js" type="text/javascript"></script>
+    <script src="https://use.fontawesome.com/75e9c868a9.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
 
   </body>
 </html>
