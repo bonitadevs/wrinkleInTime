@@ -5,17 +5,25 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "lite-server"
+    "dev": "lite-server",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts"
   },
   "author": "Danielle Wilson",
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^5.0.2",
+    "copyfiles": "^2.4.1",
     "rfs": "^9.0.4",
     "scss": "^0.2.4"
   },
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.6.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   }
 }
